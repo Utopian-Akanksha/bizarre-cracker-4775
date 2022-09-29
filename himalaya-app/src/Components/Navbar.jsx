@@ -12,9 +12,9 @@ const Navbar = () => {
                <Text color="#ffffff" fontSize="17px" textAlign="center" letterSpacing="0.5px" > <span><strong>FREE SHIPPING</strong></span> ON ALL ORDERS ABOVE $35!</Text>
            </Box>
 
-           <Flex alignItems="center" height="30px" padding="4rem">
+           <Flex alignItems="center" height="28px" padding="3.4rem">
                <Flex alignItems="center" gap="3rem">
-                  <Box> <Image width="210px" height="80px" src={logo} /> </Box>
+                  <Box> <Image width="230px" height="70px" src={logo} /> </Box>
 
                   <Flex gap="3rem">
                        <Box><Text color="#777777" fontSize="20px">Shop</Text></Box>
