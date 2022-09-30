@@ -3,7 +3,8 @@ import logo from '../Assets/logo.png';
 import search from '../Assets/search.png'
 import user from '../Assets/user.png'
 import bag from '../Assets/bag.png'
-import {Box,Text,Image,Flex,Spacer} from "@chakra-ui/react";
+import {Box,Text,Image,Flex,Spacer,Menu,MenuButton,Portal,MenuList,MenuItem} from "@chakra-ui/react";
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -27,7 +28,20 @@ const Navbar = () => {
 
                <Flex alignItems="center" gap="1.2rem">
                    <Box><Image width="30px" height="30px" src={search}/></Box>
-                   <Box><Image width="25px" height="25px" src={user} /></Box>
+                   <Box>
+                      <Menu>
+                        <MenuButton>
+                            <Image width="25px" height="25px" src={user} />
+                       </MenuButton>
+                       <Portal>
+                        <MenuList>
+                           <MenuItem><Link to="/sign">Sign In</Link></MenuItem>
+                           <MenuItem><Link to="/register">Register</Link></MenuItem>
+                           <MenuItem><Link to="/checkout">Checkout</Link></MenuItem>
+                        </MenuList>
+                       </Portal>
+                     </Menu>
+                   </Box>
                    <Box><Image width="25px" height="25px" src={bag} /></Box>
                </Flex>
 
