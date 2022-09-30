@@ -2,5 +2,26 @@
 
 .categories{
     display:grid;
-    grid-template-columns:repeat(3,200px)
+    grid-template-columns:repeat(3,365px);
 }
+
+.catBox{
+    display:flex;
+    gap:5px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBox{
+    transition:1s all ease-in-out;
+
+}
+
+.imgBox:hover{
+    transform:scale(1.1)
+}
+
+/* .imgBox:hover{
+    transform:scale(1)
+} */
