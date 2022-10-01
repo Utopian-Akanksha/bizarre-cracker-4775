@@ -35,7 +35,7 @@ const Navbar = () => {
                        </MenuButton>
                        <Portal>
                         <MenuList>
-                           <MenuItem><Link to="/sign">Sign In</Link></MenuItem>
+                           <MenuItem><Link to="/signin">Sign In</Link></MenuItem>
                            <MenuItem><Link to="/register">Register</Link></MenuItem>
                            <MenuItem><Link to="/checkout">Checkout</Link></MenuItem>
                         </MenuList>
