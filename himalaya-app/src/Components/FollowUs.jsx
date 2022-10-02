@@ -23,7 +23,7 @@ const FollowUs = () => {
         <Box style={{display:"grid", gridTemplateColumns:"repeat(4,290px)", gap:"14px", alignItems:"center"}}>
             {
                 instaImages.map((item)=>(
-                    <Box>
+                    <Box key={Date.now()}>
                         <Image className="instaBox" src={item} alt="follow" />
                     </Box>
                 ))

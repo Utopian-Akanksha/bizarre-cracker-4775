@@ -15,7 +15,7 @@ const Navbar = () => {
 
            <Flex alignItems="center" height="28px" padding="3.4rem">
                <Flex alignItems="center" gap="3rem">
-                  <Box> <Image width="230px" height="70px" src={logo} /> </Box>
+                  <Box> <Link to="/" ><Image width="230px" height="70px" src={logo} /></Link> </Box>
 
                   <Flex gap="3rem">
                        <Box><Text color="#777777" fontSize="20px">Shop</Text></Box>

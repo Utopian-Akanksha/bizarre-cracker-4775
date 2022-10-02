@@ -22,7 +22,7 @@ const Footer = () => {
               
                     {
                         info.map((el)=>(
-                            <Box style={{fontSize:"17px", color:"#888888",marginTop:"8px",letterSpacing:"0.3px"}}>{el}</Box>
+                            <Box key={el} style={{fontSize:"17px", color:"#888888",marginTop:"8px",letterSpacing:"0.3px"}}>{el}</Box>
                         ))
                     }
                 
@@ -35,7 +35,7 @@ const Footer = () => {
                 
                     {
                         policies.map((el)=>(
-                            <Box style={{fontSize:"17px", color:"#888888", marginTop:"8px",letterSpacing:"0.3px"}} >{el}</Box>
+                            <Box key={el} style={{fontSize:"17px", color:"#888888", marginTop:"8px",letterSpacing:"0.3px"}} >{el}</Box>
                         ))
                     }
                
